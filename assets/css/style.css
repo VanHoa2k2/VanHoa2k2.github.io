@@ -75,6 +75,7 @@ html {
     display: inline-block;
     margin-top: 15px;
     border: none;
+    -webkit-appearance: none;
 }
 
 .btn:hover {

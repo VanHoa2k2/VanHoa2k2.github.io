@@ -178,11 +178,13 @@
 
                     <!-- cart layout -->
                     <div class="header__cart">
-                        <div class="header__cart-wrap">
+                        <label for="header__mobile-cart" class="header__cart-wrap">
                             <i class="header__cart-icon fas fa-shopping-cart"></i>
                             <span class="header__cart-notice">3</span>
 
                             <!-- No cart: header__cart-list--no-cart -->
+                            <input type="checkbox" hidden class="header__mobile-cart-checkbox" id="header__mobile-cart">
+
                             <div class="header__cart-list">
                                 <img src="./assets/img/no_cart.png" alt="" class="header__cart-no-cart-img">
                                 <span class="header__cart-list-no-cart-msg">
@@ -460,7 +462,7 @@
 
                                 <a href="#" class="header__cart-view-cart btn btn--primary">Xem giỏ hàng</a>
                             </div>
-                        </div>
+                        </label>
                     </div>
                 </div>
             </div>

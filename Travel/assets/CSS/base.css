@@ -1,0 +1,100 @@
+:root {
+    --white-color: #fff;
+    --back-color: #000;
+    --text-color: #9a9a9a;
+    --purple-color: #ba71da;
+    --blue-color: #14b9d5;
+    --bold-color: #555;
+    --border-color: #f1f1f1;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.main {
+    overflow: hidden;
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.grid__column-4 {
+    width: 33.33333%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.grid__column-4-12 {
+    width: 33.3334%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.grid__column-6 {
+    width: 50%;
+}
+
+.mr-lr {
+    padding: 0 15px;
+}
+
+.btn {
+    display: inline-flex;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 38px;
+    text-transform: uppercase;
+    background-color: var(--white-color);
+    letter-spacing: 2px;
+    min-width: 90px;
+    padding: 15px 35px;
+    cursor: pointer;
+}
+
+.yellow-orange {
+    background: linear-gradient(to right, #ffd205 0%, #ff9b05 100%);
+}
+
+.orange-yellow {
+    background: linear-gradient(to right, #f3a46b 0%, #f3c96b 100%);
+}
+
+.red-orange {
+    background: linear-gradient(to right, #f76570 0%, #f78d65 100%);
+}
+
+.violet-orange {
+    background: linear-gradient(to right, #ba71da 0%, #da717b 100%);
+}
+
+.greenlight-greenbold {
+    background: linear-gradient(to right, #1bbc9b 0%, #1bbc63 100%);
+}
+
+.blue-green {
+    background: linear-gradient(to right, #14b9d5 0%, #14d5b1 100%);
+}
+
+.yellow {
+    background-color: #ffd205;
+}
+
+.red {
+    background-color: #f76570;
+}
+
+.violet {
+    background-color: #ba71da;
+}

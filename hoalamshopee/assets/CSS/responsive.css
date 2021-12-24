@@ -12,6 +12,16 @@
         z-index: 10;
     }
 
+    .header__navbar {
+        justify-content: flex-end;
+    }
+    
+    .header-with-search {
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 4px;
+    }
+
     .header__cart-list {
         position: fixed;
         top: var(--header-height);
@@ -43,12 +53,16 @@
     .mobile__category {
         display: block;
     }
+
+    .header__navbar-item {
+        font-size: 1.5rem;
+    }
 }
 
 /* Tablet */
 @media (min-width:740px) and (max-width: 1023px) {
     :root {
-        --header-height: 68px;
+        --header-height: 90px;
         --navbar-height: 0px;
         --header-with-search-height: calc(var(--header-height) - var(--navbar-height));
     }
@@ -74,17 +88,13 @@
 /* Mobile */
 @media (max-width: 739px) {
     :root {
-        --header-height: 54px;
+        --header-height: 78px;
         --navbar-height: 0px;
         --header-with-search-height: calc(var(--header-height) - var(--navbar-height));
     }
 
     .hide-on-mobile {
         display: none;
-    }
-
-    .header-with-search {
-        justify-content: space-between;
     }
 
     .header__logo {
@@ -189,5 +199,26 @@
 
     .footer__download-apps-link {
         padding: 6px 8px;
+    }
+    
+    /* modal */
+    .modal__body {
+        margin-top: 150px;
+    }
+
+    .auth-form {
+        width: 320px;
+    }
+
+    .auth-form__controls {
+        margin-top: 24px;
+    }
+
+    .auth-form__socials {
+        flex-direction: column;
+    }
+
+    .auth-form__socials--facebook {
+        margin-bottom: 12px;
     }
 }

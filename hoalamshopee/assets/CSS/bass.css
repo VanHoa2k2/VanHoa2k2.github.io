@@ -78,6 +78,11 @@ html {
     bottom: 0;
     display: flex;
     animation: fadeIn linear 0.1s;
+    display: none;
+}
+
+.modal.open {
+    display: flex;
 }
 
 .modal__overlay {

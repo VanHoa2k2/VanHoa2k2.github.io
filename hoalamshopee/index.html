@@ -18,8 +18,8 @@
     <div class="app">
         <div class="header">
             <div class="grid wide">
-                <nav class="header__navbar hide-on-mobile-tablet">
-                    <ul class="header__navbar-list">
+                <nav class="header__navbar">
+                    <ul class="header__navbar-list hide-on-mobile-tablet">
                         <li class="header__navbar-item header__navbar-item--has-qr header__navbar-item--separate">
                             Vào cửa hàng trên ứng dụng Shopee
                             <div class="header__qr">
@@ -46,7 +46,7 @@
                     </ul>
     
                     <ul class="header__navbar-list">
-                        <li class="header__navbar-item header__navbar-item--has-notify">
+                        <li class="header__navbar-item header__navbar-item--has-notify hide-on-mobile-tablet">
                             <a href="" class="header__navbar-item-link">
                                 <i class="header__navbar-icon far fa-bell"></i>
                                 Thông báo
@@ -89,16 +89,16 @@
                                 </footer>               
                             </div>
                         </li>
-                        <li class="header__navbar-item">
+                        <li class="header__navbar-item header__navbar-item--impale hide-on-mobile-tablet">
                             <a href="" class="header__navbar-item-link">
                                 <i class="header__navbar-icon far fa-question-circle"></i>
                                 Trợ giúp
                             </a>
                         </li>
-                        <!-- <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate">Đăng ký</li>
-                        <li class="header__navbar-item header__navbar-item--strong">Đăng nhập</li> -->
-                        <li class="header__navbar-item header__navbar-user">
-                            <img src="https://scontent.fsgn5-9.fna.fbcdn.net/v/t1.6435-9/204403449_602978277353790_9056362851999830239_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=BPjSLsHG_O0AX8mk6-9&_nc_ht=scontent.fsgn5-9.fna&oh=65f3d94981ae6d7cf36d001a3775c52d&oe=618BDAEA" alt="" class="header__navbar-user-img">
+                        <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate">Đăng ký</li>
+                        <li class="header__navbar-item header__navbar-item--strong">Đăng nhập</li>
+                        <!-- <li class="header__navbar-item header__navbar-user">
+                            <img src="https://scontent.fsgn5-9.fna.fbcdn.net/v/t1.6435-9/204403449_602978277353790_9056362851999830239_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=gxt2iw46kS0AX_4KYWX&_nc_ht=scontent.fsgn5-9.fna&oh=00_AT83Zzf23D4t4mOtj1a-vfXxAYzF1Ac_y6imRelfqEf9tw&oe=61EAC6EA" alt="" class="header__navbar-user-img">
                             <span class="header__navbar-user-name">Ngọc Trinh</span>
                             <ul class="header__navbar-user-menu">
                                 <li class="header__navbar-user-item">
@@ -114,7 +114,7 @@
                                     <a href="">Đăng xuất</a>
                                 </li>
                             </ul>
-                        </li>
+                        </li> -->
                     </ul>
                 </nav>
 
@@ -1861,12 +1861,12 @@
     </div>
 
     <!-- modal layout -->
-    <!-- <div class="modal">
+    <div class="modal">
         <div class="modal__overlay"></div>
 
-        <div class="modal__body">  -->
+        <div class="modal__body"> 
             <!-- Register form -->
-            <!-- <div class="auth-form">
+            <div class="auth-form">
                 <div class="auth-form__container">
                     <div class="auth-form__header">
                         <h3 class="auth-form__heading">Đăng ký</h3>
@@ -1914,10 +1914,10 @@
                         </span>
                     </a>
                 </div>
-            </div>    -->
+            </div>   
             
              <!-- login form  -->
-            <!-- <div class="auth-form">
+            <div class="auth-form">
                 <div class="auth-form__container">
                     <div class="auth-form__header">
                         <h3 class="auth-form__heading">Đăng nhập</h3>
@@ -1963,8 +1963,9 @@
                         </span>
                     </a>
                 </div>
-            </div>    -->
+            </div>   
         </div>
     </div> 
+    <script src="./assets/javascripts/main.js"></script>
 </body>
 </html>

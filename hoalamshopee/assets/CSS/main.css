@@ -355,6 +355,19 @@
     background-color: var(--white-color);
     border-radius: 2px;
     overflow: hidden;
+    display: none;
+}
+
+.auth-form.open {
+    display: block;
+}
+
+.auth-form.open-sign-up {
+    display: block;
+}
+
+.auth-form.open-log-in {
+    display: block;
 }
 
 .auth-form__container {

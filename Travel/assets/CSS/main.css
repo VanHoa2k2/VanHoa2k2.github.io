@@ -656,15 +656,45 @@
 }
 
 .beaches {
-    z-index: -1;
     position: relative;
+    width: 750px;
     margin-left: 40px;
 }
 
-.beaches-img {
-    background: url(/Travel/assets/img/beaches/slider-1.jpg) no-repeat center/ cover;
+.beaches-imgs {
+    position: relative;
+    overflow: hidden;
     width: 750px;
     height: 410px;
+    display: flex;
+}
+
+.beaches-img {
+    width: 750px;
+    height: 410px;
+    flex: 1 0 100%;
+    transition: all 0.2s;
+    display: none;
+}
+
+.beaches-img.active {
+    display: block;
+    transition: opacity linear 0.5s;
+}
+
+.beaches-img:first-child.active {
+    position: absolute;
+    left: 0;
+}
+
+.beaches-img:first-child.active2 {
+    position: absolute;
+    left: -750;
+}
+
+.beaches-img:first-child.active3 {
+    position: absolute;
+    left: -1500;
 }
 
 .beaches__navbar {
@@ -675,6 +705,10 @@
     justify-content: center;
 }
 
+.beaches__navbar-btn.active {
+    background-color: var(--white-color);
+}
+
 .beaches__navbar-btn {
     display: block;
     background-color: #73a9ca;
@@ -682,10 +716,6 @@
     height: 3.5px;
     margin: 0 11px;
     cursor: pointer;
-}
-
-.beaches__navbar-btn:first-child {
-    background-color: var(--white-color);
 }
 
 .beaches__time {

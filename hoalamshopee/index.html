@@ -1866,7 +1866,7 @@
 
         <div class="modal__body"> 
             <!-- Register form -->
-            <div class="auth-form">
+            <div class="auth-form-1">
                 <div class="auth-form__container">
                     <div class="auth-form__header">
                         <h3 class="auth-form__heading">Đăng ký</h3>
@@ -1875,15 +1875,18 @@
 
                     <div class="auth-form__form">
                         <div class="auth-form__group">
-                            <input type="text" class="auth-form__input" placeholder="Email của bạn">
+                            <input id="email" name="email" type="text" class="auth-form__input" placeholder="Email của bạn">
+                            <div class="auth-form__message"></div>
                         </div>
 
                         <div class="auth-form__group">
-                            <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
+                            <input id="password" name="password" type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
+                            <div class="auth-form__message"></div>
                         </div>
 
                         <div class="auth-form__group">
-                            <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu của bạn">
+                            <input id="password_confirmation" name="password_confirmation" type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu của bạn">
+                            <div class="auth-form__message"></div>
                         </div>
                     </div>
 
@@ -1897,7 +1900,7 @@
 
                     <div class="auth-form__controls">
                         <button class="btn btn--normal auth-form__controls-back ">TRỞ LẠI</button>
-                        <button class="btn btn--primary">ĐĂNG KÝ</button>
+                        <button class="btn btn--primary auth-form__confirm">ĐĂNG KÝ</button>
                     </div>
                 </div>                   
 
@@ -1917,7 +1920,7 @@
             </div>   
             
              <!-- login form  -->
-            <div class="auth-form">
+            <div class="auth-form-2">
                 <div class="auth-form__container">
                     <div class="auth-form__header">
                         <h3 class="auth-form__heading">Đăng nhập</h3>
@@ -1926,11 +1929,13 @@
 
                     <div class="auth-form__form">
                         <div class="auth-form__group">
-                            <input type="text" class="auth-form__input" placeholder="Email của bạn">
+                            <input id="email" name="email" type="text" class="auth-form__input" placeholder="Email của bạn">
+                            <div class="auth-form__message"></div>
                         </div>
 
                         <div class="auth-form__group">
-                            <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
+                            <input id="password" name="password" type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
+                            <div class="auth-form__message"></div>
                         </div>
                     </div>
 
@@ -1944,7 +1949,7 @@
 
                     <div class="auth-form__controls">
                         <button class="btn btn--normal auth-form__controls-back ">TRỞ LẠI</button>
-                        <button class="btn btn--primary">ĐĂNG NHẬP</button>
+                        <button class="btn btn--primary auth-form__confirm">ĐĂNG NHẬP</button>
                     </div>
                 </div>                   
 
@@ -1967,5 +1972,39 @@
         </div>
     </div> 
     <script src="./assets/javascripts/main.js"></script>
+
+    <script>
+        Validator({
+            form: '.auth-form-1',
+            formMessage: '.auth-form__message',
+            rules: [
+            Validator.isRequired('#email'),
+            Validator.isEmail('#email'),
+            Validator.isRequired('#password'),
+            Validator.isPassword('#password',6),
+            Validator.isRequired('#password_confirmation'),
+            Validator.ispassword_confirmation('#password_confirmation',function() {
+                return document.querySelector('#password').value
+            })
+            ],
+            onSubmit: function(data) {
+                console.log(data)
+            }
+        })
+
+        Validator({
+            form: '.auth-form-2',
+            formMessage: '.auth-form__message',
+            rules: [
+            Validator.isRequired('#email'),
+            Validator.isEmail('#email'),
+            Validator.isRequired('#password'),
+            Validator.isPassword('#password',6),
+            ],
+            onSubmit: function(data) {
+                console.log(data)
+            }
+        })
+    </script>
 </body>
 </html>

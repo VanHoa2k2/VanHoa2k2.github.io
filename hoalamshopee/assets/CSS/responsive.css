@@ -206,9 +206,14 @@
         margin-top: 150px;
     }
 
-    .auth-form {
+    .auth-form-1 {
         width: 320px;
     }
+
+    .auth-form-2 {
+        width: 320px;
+    }
+
 
     .auth-form__controls {
         margin-top: 24px;

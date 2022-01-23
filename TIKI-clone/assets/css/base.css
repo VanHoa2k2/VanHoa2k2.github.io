@@ -1,0 +1,149 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #38383d;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.no-wrap {
+    flex-wrap: nowrap !important;
+}
+
+.mr-top-8px {
+    margin-top: 8px;
+}
+
+.mr-left-26px {
+    margin-left: 26px;
+}
+
+@keyframes flash-item {
+    50% {
+      opacity: 0.3;
+      transform: scale(1.3);
+    }
+}
+
+.container_category .row.sm-gutter {
+    margin-left:  -16px;
+    margin-right:  -16px;
+}
+
+.container_category .row.sm-gutter .col{
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.contain-box .row.sm-gutter {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.contain-box .row.sm-gutter .col {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.content_banner-wrap .row.sm-gutter {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.content_banner-wrap .row.sm-gutter .col {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.contain_genuine .row.sm-gutter {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.contain_genuine .row.sm-gutter .col{
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.contain_trend-items .row.sm-gutter {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.contain_trend-items .row.sm-gutter .col{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.contain_freeship-wrap .row.sm-gutter {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.contain_freeship-wrap .row.sm-gutter .col{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.contain_suggest-wrap .row.sm-gutter {
+    margin-left: -2px;
+    margin-right: -2px;
+}
+
+.contain_suggest-wrap .row.sm-gutter .col{
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.contain_coupon-wrap .row.sm-gutter {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.contain_coupon-wrap .row.sm-gutter .col{
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+/* navbar active */
+.nav_scroll-left {
+    display: none;
+}
+
+.nav_scroll-left.active {
+    display: block;
+}
+
+.nav_scroll-right {
+    display: none;
+}
+
+.nav_scroll-right.active {
+    display: block;
+}
+
+.container_category.scrollRight {
+    transform: translateX(-990px)
+}
+
+.container_category.scrollLeft {
+    transform: translateX(0)
+}
+
+/* active */
+.contain_genuine-dot.active {
+    background-color: rgb(26, 148, 255);
+}
+
+.hide {
+    display: none;
+}

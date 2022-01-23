@@ -1,0 +1,191 @@
+/* Mobile & tablet */
+@media (max-width: 1023px) {
+    .hide-on-mobile-tablet {
+        display: none;
+    }
+
+    .show-on-mobile-tablet {
+        display: block;
+    }
+
+    .app {
+        overflow: hidden;
+    }
+
+    .no-wrap-mobile-tablet {
+        flex-wrap: nowrap;
+    }
+    
+}
+
+/* Tablet */
+@media (min-width:740px) and (max-width: 1023px) {
+    .hide-on-tablet {
+        display: none;
+    }
+
+    .header {
+        height: 114px
+    }
+
+    .header_navbar {
+        padding-top: 8px;
+    }
+
+    .freeship-item {
+        order: 1;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .freeship-img {
+        width: 100px;
+        height: 20px;
+    }
+    
+    .logo-tiki-link {
+        order: 2;
+        margin-right: 0;
+        margin-left: 50px;
+    }
+
+    .logo-tiki-img {
+        margin-left: 126px;
+    }
+
+    .header_navbar-cart {
+        order: 3;
+        margin-left: 340px;
+    }
+
+    .header_search{
+        order: 4;
+        margin-top: 8px;
+    }
+
+    .header_search-input-wrap {
+        width: 100%;
+    }
+
+    .header_search {
+        width: 100%;
+    }
+
+    .header_search-input {
+        width: 100%;
+    }
+
+    .container_category-wrap  {
+        overflow-x: auto;
+    }
+
+    .contain_heading .row.sm-gutter {
+        margin-left: -4px;
+        margin-right: -4px;
+    }
+    
+    .contain_heading .row.sm-gutter .col{
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+
+    .contain_icon-wrap,
+    .contain_suggest-wrap {
+        overflow-x: auto;
+    }
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+    .hide-on-mobile {
+        display: none;
+    }
+
+    .header{
+        min-height: 104px;
+    }
+
+    .header_navbar {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 0 16px;
+    }
+
+    .header_search-input {
+        width: 296px;
+    }
+
+    .header_navbar-user {
+        display: none;
+    }
+
+    .header_navbar-list {
+        display: none;
+    }
+
+    .header_seller-tiki {
+        display: none;
+    }
+    
+    .header_navbar-cart-text {
+        display: none;
+    }
+
+    .freeship-item {
+        order: 1;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .freeship-img {
+        width: 90px;
+        height: 16px;
+    }
+    
+    .logo-tiki-link {
+        order: 2;
+        margin-right: 0;
+        margin-left: 50px;
+    }
+
+    .header_navbar-cart {
+        order: 3;
+        margin-left: 100px;
+    }
+
+    .header_search{
+        order: 4;
+        margin-top: 8px;
+    }
+
+    .header_search-button {
+        width: 54px;
+    }
+
+    .header_search-button-icon {
+        margin-left: 8px;
+    }
+
+    .header_search-button-text {
+        display: none;
+    }
+
+    .contain_intro {
+        height: 156px;
+    }
+
+    .contain_icon-wrap,
+    .contain_suggest-wrap {
+        max-width: 375px;
+        overflow-x: auto;
+    }
+
+    .contain_trend-item-img {
+        width: 65px;
+        height: 82px;
+    }
+
+    .search_data {
+        width: calc(100% + 54px);
+    }
+}

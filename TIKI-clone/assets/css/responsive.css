@@ -112,6 +112,11 @@
     }
 
     .header_search-input {
+        width: 0;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .header_search-input.open {
         width: 296px;
     }
 
@@ -153,12 +158,23 @@
         margin-left: 100px;
     }
 
-    .header_search{
+    .header_search {
+        width: 54px;
+        border-radius: 2px;
         order: 4;
         margin-top: 8px;
+        margin-right: 1px;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .header_search.open {
+        width: 100%;
     }
 
     .header_search-button {
+        position: absolute;
+        right: 0;
+        top: 0;
         width: 54px;
     }
 

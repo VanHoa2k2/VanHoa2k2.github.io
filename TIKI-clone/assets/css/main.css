@@ -22,6 +22,7 @@
 }
 
 .header_search {
+    position: relative;
     display: flex;
     box-shadow: rgb(98 98 98 / 50%) 0px 1px 2px 0px;
 }
@@ -83,6 +84,22 @@
 
 .search_data-list {
 
+}
+
+.search_data-item-todos {
+    padding-left: 0;
+    margin: 0;
+}
+
+.search_data-item-todos li{
+    display: flex;
+    padding: 0 16px;
+    text-decoration: none;
+    color: #242424;
+    align-items: center;
+    height: 36px;
+    cursor: pointer;
+    list-style-type: none;
 }
 
 .search_data.active .search_data-item-more {
@@ -1161,6 +1178,7 @@
     position: sticky;
     top: 0px;
     background-color: #f5f5fa;
+    z-index: 9999;
 }
 
 .contain_suggest-title {
